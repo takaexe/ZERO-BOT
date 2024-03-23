@@ -14,7 +14,7 @@ module.exports = {
   
       let button = new ActionRowBuilder().addComponents(
         new ButtonBuilder()
-          .setLabel("Fila")
+          .setLabel("Queue")
           .setStyle(ButtonStyle.Secondary)
           .setCustomId("fila"),
         new ButtonBuilder()
