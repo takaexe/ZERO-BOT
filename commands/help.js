@@ -30,7 +30,7 @@ module.exports = {
           { name: '🔀 Shuffle', value: 'Embaralhe as músicas na fila' },
           { name: '📃 playlist', value: 'Gerenciar as listas de reprodução' }
         )
-        .setImage(``); 
+        .setImage(``https://cdn.discordapp.com/attachments/1004341381784944703/1165201249331855380/RainbowLine.gif?ex=654f37ba&is=653cc2ba&hm=648a2e070fab36155f4171962e9c3bcef94857aca3987a181634837231500177&`); 
 
       const basicCommandsEmbed = new EmbedBuilder()
         .setColor(client.config.embedColor)
@@ -43,7 +43,7 @@ module.exports = {
            { name: '🎵 Now Playing', value: 'Exibir as informações da música atualmente sendo reproduzida' },
           { name: '🔊 Volume', value: 'Ajuste o volume da música [ouvir em volumes altos é arriscado] '},
         ) 
-       .setImage('')
+       .setImage('https://cdn.discordapp.com/attachments/1150827819547504741/1168917372267151370/standard.gif')
       
 
       const button1 = new ButtonBuilder()
