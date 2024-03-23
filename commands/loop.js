@@ -14,9 +14,9 @@ module.exports = {
   
       let button = new ActionRowBuilder().addComponents(
         new ButtonBuilder()
-          .setLabel("Queue")
+          .setLabel("Playlist")
           .setStyle(ButtonStyle.Secondary)
-          .setCustomId("fila"),
+          .setCustomId("queue"),
         new ButtonBuilder()
           .setLabel("Música atual")
           .setStyle(ButtonStyle.Secondary)
