@@ -33,6 +33,3 @@ module.exports = {
   },
 };
 
-
-   ## YT : https://www.youtube.com/channel/UCPbAvYWBgnYhliJa1BIrv0A
-*/
