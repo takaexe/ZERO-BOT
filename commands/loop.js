@@ -14,15 +14,15 @@ module.exports = {
   
       let button = new ActionRowBuilder().addComponents(
         new ButtonBuilder()
-          .setLabel("Queue")
+          .setLabel("Fila")
           .setStyle(ButtonStyle.Secondary)
-          .setCustomId("queue"),
+          .setCustomId("fila"),
         new ButtonBuilder()
-          .setLabel("Current Song")
+          .setLabel("Música atual")
           .setStyle(ButtonStyle.Secondary)
           .setCustomId("nowplaying"),
         new ButtonBuilder()
-          .setLabel("Stop Loop!")
+          .setLabel("Parar Loop!")
           .setStyle(ButtonStyle.Danger)
           .setCustomId("close")
       )
