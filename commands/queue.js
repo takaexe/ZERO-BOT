@@ -57,7 +57,7 @@ module.exports = {
           .setTitle(`${interaction.guild.name}  Queue`)
           .setThumbnail(interaction.guild.iconURL({ size: 2048, dynamic: true }))
           .setColor(client.config.embedColor)
-          .setDescription(`▶️ Now plawying: \`${queue.songs[0].name}\`
+          .setDescription(`▶️ Tocando agora: \`${queue.songs[0].name}\`
     ${current.map(data =>
             `\n\`${sayı++}\` | [${data.title}](${data.url}) | (Adicionado por: <@${data.user.id}>)`
           )}`)
@@ -130,7 +130,7 @@ module.exports = {
               .setDisabled(true))
 
           const embed = new EmbedBuilder()
-            .setTitle('Command Timeout')
+            .setTitle('Tempo limite do comando')
             .setColor(`#ecfc03`)
             .setDescription('▶️ Execute o comando Queue novamente!!')
           return interaction?.editReply({ embeds: [embed], components: [button] }).catch(e => { })
