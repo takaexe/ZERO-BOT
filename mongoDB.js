@@ -33,11 +33,19 @@ const playlist = Schema({
 module.exports = {
   musicbot: model("musicbot", musicbot),
   playlist: model("playlist", playlist)
-  mongoose.set('strictQuery', false);
-  const conn = await mongoose.connect(process.env.MONGO_URI, {
-  useNewUrlParser: true,
- useUnifiedTopology: true,
-});
+  const dbSetup = async () => {
+  try {
+    const DBURL = process.env.DB_URL;
+    mongoose.set("strictQuery", false);
+    mongoose.connect(DBURL, {
+      useNewUrlParser: true,
+      ssl: true,
+      sslValidate: false,
+    });
+  } catch (err) {
+    console.log("Databse Connection Error : " + err.message);
+  }
+};
 };
 /*
 
