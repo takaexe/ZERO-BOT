@@ -9,7 +9,7 @@ module.exports = {
 
   run: async (client, interaction) => {
     try {
-      const youtubeLink = 'https://discord.gg/FUEHs7RCqz';
+      const youtubeLink = 'https://discord.gg/yFVrUPwpmU';
       const InstagramLink = 'https://www.instagram.com/Taka.exe';
       const { EmbedBuilder } = require('discord.js')
         const embed = new EmbedBuilder()
