@@ -2,11 +2,11 @@ const { ApplicationCommandOptionType, EmbedBuilder } = require('discord.js');
 const db = require("../mongoDB");
 module.exports = {
   name: "skip",
-  description: "Muda a música que está sendo tocada.",
+  description: "Pula a música que está sendo tocada.",
   permissions: "0x0000000000000800",
   options: [{
     name: "number",
-    description: "mencione quantas músicas você quer pular",
+    description: "Quantas músicas você quer pular",
     type: ApplicationCommandOptionType.Number,
     required: false
   }],
