@@ -81,7 +81,7 @@ module.exports = {
         collector.on("collect", async (button) => {
           if (button?.customId === "close") {
             collector?.stop()
-           return button?.reply({ content: 'Command Cancelled', ephemeral: true }).catch(e => { })
+           return button?.reply({ content: 'Comando cancelado', ephemeral: true }).catch(e => { })
           } else {
 
             if (button.customId === backId) {
