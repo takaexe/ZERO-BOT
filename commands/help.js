@@ -43,7 +43,7 @@ module.exports = {
            { name: '🎵 Now Playing', value: 'Exibir as informações da música atualmente sendo reproduzida' },
           { name: '🔊 Volume', value: 'Ajuste o volume da música [ouvir em volumes altos é arriscado] '},
         ) 
-       .setImage('https://cdn.discordapp.com/attachments/1150827819547504741/1168917372267151370/standard.gif')
+       .setImage('https://i.pinimg.com/originals/98/16/55/981655dc367f9409ea40331961f065ac.gif')
       
 
       const button1 = new ButtonBuilder()
