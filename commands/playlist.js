@@ -411,7 +411,7 @@ await interaction.editReply({
             .setDescription(`\n${current.map(data =>
               `\n\`${sayı++}\` | [${data.music_name}](${data.music_url}) - <t:${Math.floor(data.saveTime / 1000) }:R>`
             ) }`)
-            .setFooter({ text: `Section ${page}/${Math.floor(a+1) }` })
+            .setFooter({ text: `Seção ${page}/${Math.floor(a+1) }` })
         }
 
         const canFitOnOnePage = trackl.length <= kaçtane
@@ -572,7 +572,7 @@ await interaction.editReply({
             .setDescription(`\n${current.map(data =>
               `\n**${sayı++} |** \`${data.name}\` By. \`${data.authorTag}\` - **${data.plays}** "plays" (<t:${Math.floor(data.createdTime / 1000) }:R>)`
             ) }`)
-            .setFooter({ text: `Section ${page}/${Math.floor(a+1) }` })
+            .setFooter({ text: `Seção ${page}/${Math.floor(a+1) }` })
         }
 
         const canFitOnOnePage = trackl.length <= kaçtane
