@@ -649,7 +649,7 @@ await interaction.editReply({
               .setThumbnail(interaction.user.displayAvatarURL({ size: 2048, dynamic: true }))
               .setColor(client.config.embedColor)
               .setDescription('TimeOut!')
-              .setFooter({ text: 'Zero })
+              .setFooter({ text: 'Zero' })
             return interaction.editReply({ embeds: [embed], components: [button] }).catch(e => { })
 
           })
