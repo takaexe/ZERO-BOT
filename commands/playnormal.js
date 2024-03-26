@@ -125,7 +125,7 @@ module.exports = {
           } else {
             arr++
             if (arr === playlist.length) {
-              return interaction.reply({ content: `Não há álbum. ❌`, ephemeral: true }).catch(e => { })
+              return interaction.reply({ content: `Não há Playlist ❌`, ephemeral: true }).catch(e => { })
             }
           }
         }
