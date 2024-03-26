@@ -44,7 +44,7 @@ module.exports = {
       if (stp === "playlist") {
         let playlistw = interaction.options.getString('name')
         let playlist = await db?.playlist?.find().catch(e => { })
-        if (!playlist?.length > 0) return interaction.reply({ content: `Não há lista de reprodução. ❌`, ephemeral: true }).catch(e => { })
+        if (!playlist?.length > 0) return interaction.reply({ content: `Não há Playlists. ❌`, ephemeral: true }).catch(e => { })
 
         let arr = 0
         for (let i = 0; i < playlist.length; i++) {
@@ -60,7 +60,7 @@ module.exports = {
             }
 
             const music_filter = playlist[i]?.musics?.filter(m => m.playlist_name === playlistw)
-            if (!music_filter?.length > 0) return interaction.reply({ content: `No music with Name`, ephemeral: true }).catch(e => { })
+            if (!music_filter?.length > 0) return interaction.reply({ content: `Nenhuma música com esse nome.`, ephemeral: true }).catch(e => { })
                 const listembed = new EmbedBuilder()
                 .setTitle('Carregando seu álbum')
                 .setColor('#FF0000')
@@ -103,7 +103,7 @@ module.exports = {
                 await db.playlist.updateOne({ userID: p.author }, {
                   $pull: {
                     playlist: {
-                      name: playlistw
+                      name: playlist
                     }
                   }
                 }, { upsert: true }).catch(e => { })
