@@ -505,9 +505,9 @@ await interaction.editReply({
           })
           .setColor(client.config.embedColor)
           .setDescription(`\n${playlist?.playlist?.map(data =>
-            `\n**${number++} |** \`${data.name}\` - **${playlist?.musics?.filter(m => m.playlist_name === data.name)?.length || 0}** plays (<t:${Math.floor(data.createdTime / 1000) }:R>)`
+            `\n**${number++} |** \`${data.name}\` - **${playlist?.musics?.filter(m => m.playlist_name === data.name)?.length || 0}** Musicas (<t:${Math.floor(data.createdTime / 1000) }:R>)`
           ) }`)
-          .setFooter({ text: 'Zero' })
+          .setFooter({ text: ' ' })
         return interaction.reply({ embeds: [embed] }).catch(e => { }) 
 
       }
@@ -570,7 +570,7 @@ await interaction.editReply({
             .setThumbnail(interaction.user.displayAvatarURL({ size: 2048, dynamic: true }))
             .setColor(client.config.embedColor)
             .setDescription(`\n${current.map(data =>
-              `\n**${sayı++} |** \`${data.name}\` By. \`${data.authorTag}\` - **${data.plays}** "plays" (<t:${Math.floor(data.createdTime / 1000) }:R>)`
+              `\n**${sayı++} |** \`${data.name}\` Criado por. \`${data.authorTag}\` - **${data.plays}** "Vez" (<t:${Math.floor(data.createdTime / 1000) }:R>)`
             ) }`)
             .setFooter({ text: `Seção ${page}/${Math.floor(a+1) }` })
         }
