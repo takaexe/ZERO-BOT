@@ -258,7 +258,7 @@ await interaction.editReply({
           url: 'https://discord.gg/'
         })
         .setDescription(`Hey <@${interaction.member.id}>, sua música foi adicionada com sucesso! ✨`)
-        .setFooter({ text: 'Zero' })
+        .setFooter({ text: '.' })
         await interaction.reply({
   content: '',
   embeds: [ loadingembed ] 
@@ -484,7 +484,7 @@ await interaction.editReply({
               .setThumbnail(interaction.user.displayAvatarURL({ size: 2048, dynamic: true }))
               .setColor(client.config.embedColor)
               .setDescription('Tempo acabou. Use o comando novamente!'.replace("{name}", name))
-              .setFooter({ text: 'Zero' })
+              .setFooter({ text: '.' })
             return interaction.editReply({ embeds: [embed], components: [button] }).catch(e => { })
 
           })
@@ -565,7 +565,7 @@ await interaction.editReply({
             .setAuthor({
               name: 'Top playlist',
               iconURL: 'https://cdn.discordapp.com/attachments/1213421081226903552/1213422313035407360/8218-alert.gif',
-              url: ' '
+              url: 'https://discord.gg/'
             })
             .setThumbnail(interaction.user.displayAvatarURL({ size: 2048, dynamic: true }))
             .setColor(client.config.embedColor)
