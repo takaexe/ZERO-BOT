@@ -9,7 +9,7 @@ module.exports = {
 
   run: async (client, interaction) => {
     try {
-      const youtubeLink = 'https://discord.gg/yFVrUPwpmU';
+      const youtubeLink = 'Taka.exe';
       const InstagramLink = 'https://www.instagram.com/Taka.exe';
       const { EmbedBuilder } = require('discord.js')
         const embed = new EmbedBuilder()
@@ -19,7 +19,7 @@ module.exports = {
           iconURL: 'https://cdn.discordapp.com/attachments/1156866389819281418/1157310253520662638/2443-iconperson.png?ex=651824aa&is=6516d32a&hm=0becc4a0fda01e5a02a63cf098db30c287e60a474f8d2da4ddeae7f47d98a5a3&',
           url: 'https://discord.gg/'
         })
-            .setDescription(`__**About me**__:\n\n ▶️ Eu mesmo Zero. Eu sou um desenvolvedor de bot discord. Adoro jogar, assistir animes e construir diferentes aplicações de servidor web. Você obterá respostas mais rápidas no Instagram do que em outras mídias sociais. Sinta-se à vontade para entrar em contato comigo!\n Instagram: ❤️ (${youtubeLink})\n Instagram : 💙 [taka.exe](${InstagramLink})`)
+            .setDescription(`__**Sobre mim:**__:\n\n ▶️ Eu mesmo Zero. Eu sou um desenvolvedor de bot discord. Adoro jogar, assistir animes e construir diferentes aplicações de servidor web. Você obterá respostas mais rápidas no Instagram do que em outras mídias sociais. Sinta-se à vontade para entrar em contato comigo!\n Discord: ❤️ (${youtubeLink})\n Instagram : 💙 [taka.exe](${InstagramLink})`)
             .setTimestamp();
       interaction.reply({ embeds: [embed] }).catch(e => {});
 
