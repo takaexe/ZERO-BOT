@@ -155,7 +155,7 @@ module.exports = {
           .setAuthor({
             name: ' Playlist Crianda com sucesso.',
             iconURL: 'https://cdn.discordapp.com/attachments/1213421081226903552/1215554404527116288/7762-verified-blue.gif',
-            url: 'https://discord.gg/FUEHs7RCqz'
+            url: 'https://discord.gg/'
           })
   .setDescription(`Hey <@${interaction.member.id}>, Sua playlist foi criado com sucesso! 🎉`)
   .setTimestamp();
@@ -214,7 +214,7 @@ await interaction.editReply({
           .setAuthor({
             name: 'Playlist excluída com sucesso',
             iconURL: 'https://cdn.discordapp.com/attachments/1213421081226903552/1215554404527116288/7762-verified-blue.gif',
-            url: 'https://discord.gg/FUEHs7RCqz'
+            url: 'https://discord.gg/'
           })
   .setDescription(`Hey <@${interaction.member.id}>, Sua playlist foi excluído com sucesso! ✨`)
   .setTimestamp();
@@ -255,7 +255,7 @@ await interaction.editReply({
        .setAuthor({
           name: 'Música adicionada a sua playlist',
           iconURL: 'https://cdn.discordapp.com/attachments/1213421081226903552/1213430944007061574/6943_Verified.gif',
-          url: 'https://discord.gg/FUEHs7RCqz'
+          url: 'https://discord.gg/'
         })
         .setDescription(`Hey <@${interaction.member.id}>, sua música foi adicionada com sucesso! ✨`)
         .setFooter({ text: 'Zero' })
@@ -324,7 +324,7 @@ await interaction.editReply({
           .setAuthor({
             name: 'Música removida com sucesso',
             iconURL: 'https://cdn.discordapp.com/attachments/1213421081226903552/1215554404527116288/7762-verified-blue.gif',
-            url: 'https://discord.gg/FUEHs7RCqz'
+            url: 'https://discord.gg/'
           })
   .setDescription(`Hey <@${interaction.member.id}>, sua música foi removida com sucesso! ✨`)
   .setTimestamp();
@@ -404,7 +404,7 @@ await interaction.editReply({
            .setAuthor({
           name: 'Musicas da playlist',
           iconURL: 'https://cdn.discordapp.com/attachments/1213421081226903552/1213422313035407360/8218-alert.gif',
-          url: 'https://discord.gg/FUEHs7RCqz'
+          url: 'https://discord.gg/'
         })
             .setThumbnail(interaction.user.displayAvatarURL({ size: 2048, dynamic: true }))
             .setColor(client.config.embedColor) 
@@ -501,7 +501,7 @@ await interaction.editReply({
           .setAuthor({
             name: 'Suas playlist',
             iconURL: 'https://cdn.discordapp.com/attachments/1213421081226903552/1213422313035407360/8218-alert.gif',
-            url: 'https://discord.gg/FUEHs7RCqz'
+            url: 'https://discord.gg/'
           })
           .setColor(client.config.embedColor)
           .setDescription(`\n${playlist?.playlist?.map(data =>
@@ -565,7 +565,7 @@ await interaction.editReply({
             .setAuthor({
               name: 'Top playlist',
               iconURL: 'https://cdn.discordapp.com/attachments/1213421081226903552/1213422313035407360/8218-alert.gif',
-              url: 'https://discord.gg/FUEHs7RCqz'
+              url: ' '
             })
             .setThumbnail(interaction.user.displayAvatarURL({ size: 2048, dynamic: true }))
             .setColor(client.config.embedColor)
@@ -644,7 +644,7 @@ await interaction.editReply({
               .setAuthor({
           name: 'Top playlist',
           iconURL: 'https://cdn.discordapp.com/attachments/1213421081226903552/1213422313035407360/8218-alert.gif',
-          url: 'https://discord.gg/FUEHs7RCqz'
+          url: 'https://discord.gg/'
         })
               .setThumbnail(interaction.user.displayAvatarURL({ size: 2048, dynamic: true }))
               .setColor(client.config.embedColor)
