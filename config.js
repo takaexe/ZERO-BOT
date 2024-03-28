@@ -9,7 +9,8 @@ module.exports = {
   language: "en",
   embedColor: "00fbff",
   errorLog: "",
-
+  prefix: "!",
+ 
 
   sponsor: {
     status: true,
