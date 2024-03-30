@@ -22,8 +22,8 @@ console.log('\x1b[36m%s\x1b[0m', '|    🚀 Comandos Distraídos!');
 console.log('\x1b[32m%s\x1b[0m', `|    🌼 Logged in as ${client.user.username}`);
 
 setInterval(() => client.user.setActivity({ 
-  name: `/Play`, 
-  type: ActivityType.Watching }), 10000);
+  name: `Em /Play`, 
+  type: ActivityType.Listening }), 10000);
 client.errorLog = config.errorLog
 } else {
 console.log('\x1b[36m%s\x1b[0m', `|    🍔 Error MongoDB!`)
