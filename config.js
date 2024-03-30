@@ -4,7 +4,7 @@ module.exports = {
   botInvite: "",
   supportServer: "",
   mongodbURL: "mongodb+srv://root:6ZLm4x83vdNNdY19@zero-database.eutnljv.mongodb.net/?retryWrites=true&w=majority&appName=zero-database",
-  status: 'RTXX GG',
+  status: 'Taka.exe',
   commandsDir: './commands',
   language: "en",
   embedColor: "00fbff",
