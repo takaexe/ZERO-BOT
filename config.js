@@ -39,7 +39,7 @@ module.exports = {
     },
 
     voiceConfig: {
-      leaveOnFinish: false,
+      leaveOnFinish: true,
       leaveOnStop: false,
       leaveOnEmpty: {
         status: true,
