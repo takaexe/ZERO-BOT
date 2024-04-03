@@ -100,7 +100,7 @@ module.exports = {
                   interaction
                 });
               } catch (e) {
-                await interaction.editReply({ content: `❌ Nenhum resulatdo!`, ephemeral: true }).catch(e => { });
+                await interaction.editReply({ content: `❌ Nenhum resultado!`, ephemeral: true }).catch(e => { });
               }
               return collector.stop();
             }
